@@ -1,0 +1,67 @@
+@import '../../scss/typography.scss';
+@import '../../scss/vars.scss';
+
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  @include flex-align;
+
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  grid-area: header;
+  flex-direction: row;
+  height: 70px;
+  padding: 0 17.5px;
+  z-index: 10;
+  background: $lightGrayColor;
+  border: 1px solid #DEE4F2;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -10px;
+    background-color: red;
+    border: 3px solid $lightGrayColor;
+    height: 70px;
+    width: 10px;
+    z-index: 1000000;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+    margin: 0;
+    color: #626e99;
+    text-transform: uppercase;
+  }
+}
+
+.path {
+  @include flex-align;
+
+  font-size: 22px;
+  width: 100%;
+  justify-content: space-between;
+
+  div {
+    @include flex-align;
+  }
+
+  &__filter {
+    @include p3;
+
+    color: #626E99;
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}

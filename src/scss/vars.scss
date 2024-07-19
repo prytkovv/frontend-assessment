@@ -1,0 +1,90 @@
+//login
+$buttonColor: #3862fa;
+$backgroundColor: #fbfcfe;
+$inputBackgroundColor: #f8fafc;
+$borderBlueColor: #082796;
+$inputTextColor: #b8bcca;
+
+// BASE COLORS
+$primaryColor: #e30611;
+$warningColor: #fa8a64;
+$successColor: #26cd58;
+$errorColor: #f95721;
+$buttonColor: #3862fa;
+$buttonHoverColor: #c90000;
+$buttonActiveColor: #f51d16;
+$borderColor: #d4dced;
+$imagesCardBorder: #dee4f2;
+$selectBackground: #f3f6fc;
+$footerBackgroundColor: #aeb0b3;
+$dangerAlertColor: rgba(255, 228, 233, 0.5);
+$successAlertColor: rgba(232, 250, 235, 0.5);
+
+// COLORS
+$whiteColor: #ffffff;
+$modalTableBorder: #dddddd;
+$whiteThreeColor: #f7f7f7;
+$whiteSmokeColor: #f2f3f7;
+$lightGrayishBlue: #e9ebf7;
+$linkWaterColor: #e2e5eb;
+$lightestRaspberryColor: #ffe4e9;
+$lightBlueGreyColor: #d0d6da;
+$greyHeatherColor: #bbc1c7;
+$brownGreyColor: #b3b3b3;
+$greyChateauColor: #9198a0;
+$greyRavenColor: #6e7782;
+$brownishGreyColor: #666666;
+$grayDarken: #364063;
+$darkGrayColor: #626c77;
+$darkBlueGrayColor: #626e99;
+$lightGrayColor: #ecf0fe;
+$lightBlackberryColor: #6384e0;
+$normalBlackberryColor: #014fce;
+$darkBlackberryColor: #003db7;
+$lightestBlackberryColor: #e7eafa;
+$normalBlueberryColor: #0097fd;
+$darkBlueberryColor: #0077db;
+$midnightBlueColor: #202d3d;
+$deepBlueColor: #001424;
+$pitchBlackColor: #000000;
+$darkLimeColor: #a6c100;
+$lightestYellowColor: #fffde8;
+$normalMintColor: #00c19b;
+$lightMintColor: #00d9bc;
+$lightenMintColor: #c5ede7;
+$darkMintColor: #03a17b;
+$darkAppleColor: #04aa42;
+$lightPlumColor: #a86ea7;
+$darkPlumColor: #6d2d79;
+$darkRaspberryColor: #c51345;
+$megaBrightBlue: #d4dbf0;
+$ultraBrightBlue: #45b6fc;
+$blueButtonNormal: #007cff;
+$normalYellowColor: #fbe739;
+$warningColor: #fac031;
+$orangeColor: #f37f19;
+$lightOrangeColor: #fa8a64;
+$normalOrangeColor: #f95721;
+$darkOrangeColor: #e04a17;
+
+// SOCIAL MEDIA COLORS
+$vkColor: #4680c2;
+$fbColor: #1877f2;
+$twColor: #1da1f2;
+$okColor: #f7931e;
+
+//SIZES
+
+// ANIMATION
+$transitionPrimary: 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+$transitionButton: color $transitionPrimary, background $transitionPrimary, border $transitionPrimary;
+
+// SHADOWS
+$primaryBoxShadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$secondaryBoxShadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+// Z-INDEXES
+$modalZIndex: 2147483000;
+$slideModalZIndex: 2147482000;
+$pushZIndex: 2147481000;
+

@@ -1,0 +1,13 @@
+.component {
+  display: grid;
+  grid-template-areas:
+    'navigate header'
+    'navigate main';
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: 66px 1fr;
+  height: 100%;
+}
+
+.wrapper {
+  height: calc(100% - 52px);
+}

@@ -1,0 +1,437 @@
+@import 'normalize.css';
+@import './assets/fonts/inter.css';
+@import './scss/vars.scss';
+@import './scss/typography.scss';
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif !important;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+nav[aria-label="pagination navigation"] {
+  ul {
+    justify-content: center !important;
+  }
+}
+
+svg {
+  text {
+    text-align: center !important;
+  }
+}
+
+.hatch {
+  position: absolute;
+  left: 61px;
+  height: 64px;
+  width: 4px;
+  background-color: $lightGrayColor;
+  z-index: 100;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 !important;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.select-btn-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border-radius: 100% !important;
+  left: 50% !important;
+  top: auto !important;
+  right: 50% !important;
+  transform: translateX(-50%);
+  bottom: 8px !important;
+  width: 5px !important;
+  height: 5px !important;
+  border: none !important;
+  background-color: #3862FA;
+}
+
+.ant-picker-cell-today.ant-picker-cell-range-start,
+.ant-picker-cell-today.ant-picker-cell-range-start {
+  .ant-picker-cell-inner::before {
+    background-color: #fff !important;
+  }
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+  color: white !important;
+}
+
+.custom-tooltip {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  background-color: white;
+
+  p {
+    margin: 0 !important;
+    color: $darkBlueGrayColor !important;
+    font-size: 15px !important;
+    font-weight: 500;
+  }
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single).ant-picker-cell-range-hover-start::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single).ant-picker-cell-range-hover-end::before {
+  background: #e6f7ff !important;
+}
+
+.ant-picker-cell {
+  &-range-hover {
+    &-start {
+      &:before {
+        background-color: transparent !important;
+      }
+    }
+
+    &-end {
+      &:before {
+        background-color: #3862FA !important;
+      }
+    }
+
+    &, &-start, &-end {
+      &:after {
+        border: none !important;
+      }
+    }
+  }
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-start {
+  color: white !important;
+}
+
+.ant-picker {
+  border-radius: 5px !important;
+  border: 1px solid $imagesCardBorder !important;
+
+  &-dropdown {
+    width: 798px;
+  }
+
+  &-footer {
+    button {
+      width: 100px;
+      border-radius: 6px;
+      font-size: 20px;
+      height: 48px;
+    }
+  }
+
+  &-header {
+    height: 51px;
+
+    &-view {
+      display: flex;
+      flex-direction: column;
+      border: none !important;
+      color: $darkBlueGrayColor !important;
+    }
+
+    button {
+      line-height: 25px !important;
+      margin: 0 !important;
+    }
+  }
+
+  &-panels {
+    width: 100%;
+    justify-content: center;
+  }
+
+  svg {
+    display: none !important;
+  }
+
+  &-content {
+    td {
+      border: none;
+      padding: 0;
+    }
+
+    th {
+      &::first-letter {
+        text-transform: uppercase;
+      }
+
+      width: 30px !important;
+      padding: 0 !important;
+      color: $darkBlueGrayColor !important;
+    }
+  }
+
+  &-date-panel {
+    font-size: 20px;
+    width: 100%;
+
+    .ant-picker-content {
+      width: 100% !important;
+    }
+  }
+
+  &-datetime-panel {
+    justify-content: space-around;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  &-range {
+    &-arrow {
+      display: none !important;
+    }
+
+    &-wrapper {
+      width: 100%;
+      min-width: 775px !important;
+    }
+  }
+
+  &-input {
+    font-size: 20px !important;
+
+    input {
+      text-align: center;
+      font-size: 20px !important;
+      color: $darkBlueGrayColor !important;
+      cursor: pointer !important;
+    }
+  }
+
+  &-cell-inner,
+  &-month-btn,
+  &-year-btn {
+    color: $darkBlueGrayColor;
+  }
+
+  &-year-btn,
+  &-month-btn {
+    pointer-events: none !important;
+  }
+
+  &-month-btn {
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &-cell {
+    &::before {
+      height: 60px !important;
+    }
+
+    &-in-range {
+      &::before {
+        background: #e6f7ff !important;
+      }
+    }
+
+    &-range {
+
+      &-start,
+      &-end {
+        background: #e6f7ff !important;
+      }
+
+      &-hover {
+        &-start {
+          &::before {
+            content: '' !important;
+            position: absolute;
+            background: #e6f7ff !important;
+            left: 0 !important;
+            height: 60px !important;
+            right: 30px !important;
+          }
+
+          &::after {
+            content: '' !important;
+            position: absolute;
+            bottom: 0 !important;
+            height: 60px !important;
+            background: #e6f7ff !important;
+            left: 30px !important;
+            right: 0 !important;
+          }
+        }
+      }
+
+      &-start {
+        background: white !important;
+
+        &::before,
+        &::after {
+          content: '';
+          background: white !important;
+        }
+
+        &:not([class*="ant-picker-cell-selected"]) {
+
+          &::before {
+            content: '' !important;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.04) !important;
+            left: 0 !important;
+            height: 60px !important;
+            right: 30px !important;
+          }
+
+          &::after {
+            content: '' !important;
+            position: absolute !important;
+            bottom: 0 !important;
+            height: 60px !important;
+            background: #e6f7ff !important;
+            left: 20px !important;
+            right: 0 !important;
+          }
+        }
+      }
+
+      &-end {
+        width: 30px !important;
+        background-color: white !important;
+
+        &::before {
+          content: '';
+          background: #e6f7ff !important;
+          left: 0 !important;
+          right: 30px !important;
+          width: 30px !important;
+        }
+      }
+
+      &-hover {
+        background: #e6f7ff !important;
+
+        &::after,
+        &::before {
+          content: none;
+          background: #e6f7ff !important;
+        }
+
+        &-end {
+          background: #e6f7ff !important;
+
+          &::after,
+          &::before {
+            content: none;
+            background: #e6f7ff !important;
+          }
+        }
+      }
+    }
+
+    &-inner {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 55px !important;
+      height: 55px !important;
+      border-radius: 100% !important;
+    }
+
+    &-selected {
+      .ant-picker-cell-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 100% !important;
+        color: white !important;
+        background-color: #3862FA;
+      }
+    }
+  }
+
+  &-panel-container {
+    margin-left: -30px !important;
+    border-radius: 10px !important;
+  }
+}
+
+.recharts-line {
+  path {
+    stroke-width: 3px !important;
+  }
+
+  path[stroke="#FFFFFF"] {
+    border: 1px solid black;
+  }
+}
+
+.select-btn-text {
+  color: $darkBlueGrayColor !important;
+}
+
+
+#simple-popper {
+  display: flex;
+  left: 15px !important;
+
+  ul {
+    border-radius: 5px;
+    border: 1px solid #dee4f2;
+  }
+}
+
+input[type=time]::-webkit-datetime-edit-fields-wrapper,
+input[type=time] {
+  display: flex;
+  align-items: center;
+}
+
+
+.ant-btn {
+  @include p2;
+  border: none !important;
+  cursor: pointer;
+  border-radius: 6px;
+  color: $whiteColor !important;
+  background-color: $buttonColor;
+}
+
+.MuiInput-underline {
+
+  &::before,
+  &::after {
+    border: none !important;
+  }
+}

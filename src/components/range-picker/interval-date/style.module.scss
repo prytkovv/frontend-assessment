@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  padding: 2px 13px;
+  border: 1px solid #626E99;
+  border-radius: 40px;
+  color: #626E99;
+  background-color: #F3F6FC;
+
+  button {
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+   background-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,6 @@
+{
+  "include": ["src", "src/library/modal.min.js"],
+  "exclude": ["node_modules"],
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {}
+}
